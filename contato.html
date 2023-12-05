@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jogos Digitais e Autismo</title>
+</head>
+<body>
+    <header>
+        <h1>Jogos Digitais no Aprendizado de Pessoas com Autismo</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="jogos.html">Jogos Recomendados</a></li>
+            <li><a href="beneficios.html">Benefícios</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações e sugestões.</p>
+
+        <div id="container">
+            <div class="card">
+                    <a href="https://www.instagram.com/pedrohenrique_n.s/">
+                <img src="img/user.png" alt="user">
+                <div class="card-content">
+                    <h3>Desenvolvido por</h3>
+                    <p>Pedro Henrique</p>
+                    </a>
+                </div>
+            </div>
+
+    </section>
+
+    <section id="sugestões">
+        <h2>Sugestões</h2>
+        <p>Clique aqui para acessar o formulario e dar seu Feedback ou Sugestões para melhorar o site</p>
+
+    </section>
+    
+    <style>
+
+        #back-to-top {
+           display: none;
+           position: fixed;
+           bottom: 20px;
+           right: 20px;
+           background-color: #007bff;
+           color: #fff;
+           border: none;
+           padding: 10px;
+           border-radius: 5px;
+           cursor: pointer;
+           font-size: 14px;
+           transition: background-color 0.3s;
+       }
+
+       #back-to-top:hover {
+           background-color: #0056b3;
+       }
+
+   </style>
+
+<button onclick="scrollToTop()" id="back-to-top">↑ Topo</button>
+
+<script>
+   var scrollToTopButton = document.getElementById('back-to-top');
+
+   window.addEventListener('scroll', function() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           scrollToTopButton.style.display = 'block';
+       } else {
+           scrollToTopButton.style.display = 'none';
+       }
+   });
+
+   function scrollToTop() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+   }
+</script>
+
+
+    <footer>
+        <p>&copy; 2023 Jogos e Autismo</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jogos Digitais e Autismo</title>
+</head>
+<body>
+    <header>
+        <h1>Jogos Digitais no Aprendizado de Pessoas com Autismo</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="jogos.html">Jogos Recomendados</a></li>
+            <li><a href="beneficios.html">Benefícios</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Texto sobre a importância dos jogos digitais no aprendizado de pessoas com autismo, e o objetivo do site</p>
+    </section>
+    <section id="jogos">
+        <h2>Jogos Recomendados</h2>
+        <p>Lista de jogos educativos e divertidos para pessoas com autismo.</p>
+
+        <div id="container">
+            <div class="card">
+                <a href="https://play.google.com/store/apps/details?id=com.assistivecards.card_crash">
+                <img src="img/Card Clash.png" alt="Jogo 1">
+                <div class="card-content">
+                    <h3>Card Clash</h3>
+                    <p>descrição</p>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="https://play.google.com/store/apps/details?id=com.jadeautism.jadeautism&hl=pt_BR&gl=US">
+                <img src="img/Jade Autism.png" alt="Jogo 2">
+                <div class="card-content">
+                    <h3>Jade Autism</h3>
+                    <p>descrição</p>
+                </a>    
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="https://play.google.com/store/apps/details?id=org.dreamoriented.leeloo&hl=pt_BR">
+                <img src="img/Leeloo.png" alt="Jogo 3">
+                <div class="card-content">
+                    <h3>Leeloo</h3>
+                    <p>descrição</p>
+                </a>    
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="https://play.google.com/store/apps/details?id=com.imagiration.mita">
+                <img src="img/Mita.png" alt="Jogo 4">
+                <div class="card-content">
+                    <h3>Mita</h3>
+                    <p>descrição</p>
+                </a>    
+                </div>
+
+    </section>
+    <section id="beneficios">
+        <h2>Benefícios</h2>
+        <p>Exploração dos benefícios que os jogos digitais podem trazer para o desenvolvimento de habilidades em pessoas com autismo.</p>
+    </section>
+
+    <div class="list">
+        <div class="row">
+        <div class="article">
+        <div class="image-container"><div class="image"></div></div>
+        <div class="frame">
+        <div class="title">Melhora na Interação Social</div>
+        <div class="subtitle">Habilidades Sociais</div>
+        <p class="text-wrapper">
+                  Os jogos digitais oferecem um ambiente seguro e controlado para que pessoas com autismo possam praticar e
+                  desenvolver habilidades sociais, como a comunicação e a interação com os outros.
+                </p>
+                <div class="user">
+                  <div class="icon-buttons">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="article">
+              <div class="image-container"><div class="image"></div></div>
+              <div class="frame">
+                <div class="title">Estimulação Cognitiva</div>
+                <div class="subtitle">Habilidades Cognitivas</div>
+                <p class="text-wrapper">
+                  Os jogos digitais podem oferecer desafios cognitivos e exercícios de memorização, ajudando a estimular o
+                  cérebro e desenvolver habilidades cognitivas em pessoas com autismo.
+                </p>
+                <div class="user">
+                  <div class="icon-buttons">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="article">
+              <div class="image-container"><div class="image"></div></div>
+              <div class="frame">
+                <div class="title">Engajamento e Motivação</div>
+                <div class="subtitle">Aprendizado Divertido</div>
+                <p class="text-wrapper">
+                  Os jogos digitais são divertidos e envolventes, o que ajuda a manter o interesse e a motivação das pessoas
+                  com autismo durante o processo de aprendizado.
+                </p>
+                <div class="user">
+                  <div class="icon-buttons">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações e sugestões.</p>
+    </section>
+
+    <style>
+
+         #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        #back-to-top:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+
+<button onclick="scrollToTop()" id="back-to-top">↑ Topo</button>
+
+<script>
+    var scrollToTopButton = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+    });
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+    <footer>
+        <p>&copy; 2023 Jogos e Autismo</p>
+    </footer>
+</body>
+</html>
